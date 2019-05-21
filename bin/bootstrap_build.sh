@@ -54,4 +54,4 @@ if [ ! -d /usr/local/apache-maven-3.5.4 ]; then
   sudo ln -s /usr/local/apache-maven-3.5.4/bin/mvn /usr/local/bin
 fi
 
-./buildall.sh -notests -so
+../buildall.sh -notests -so
