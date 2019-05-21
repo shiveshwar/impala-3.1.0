@@ -18,6 +18,7 @@
 # under the License.
 
 set -euo pipefail
+IMPALA_HOME=`dirname "$0"`
 . $IMPALA_HOME/bin/report_build_error.sh
 setup_report_build_error
 
