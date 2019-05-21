@@ -21,4 +21,4 @@
 # branch.
 #
 # E.g. to override IMPALA_HADOOP_VERSION, you could uncomment this line:
-# IMPALA_HADOOP_VERSION=3.0.0
+IMPALA_HADOOP_VERSION=3.0.0
