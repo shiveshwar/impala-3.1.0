@@ -83,7 +83,7 @@ export IMPALA_BZIP2_VERSION=1.0.6-p2
 unset IMPALA_BZIP2_URL
 export IMPALA_CCTZ_VERSION=2.2
 unset IMPALA_CCTZ_URL
-export IMPALA_CMAKE_VERSION=3.8.2
+export IMPALA_CMAKE_VERSION=3.14.3
 unset IMPALA_CMAKE_URL
 export IMPALA_CRCUTIL_VERSION=440ba7babeff77ffad992df3a10c767f184e946e-p1
 unset IMPALA_CRCUTIL_URL
@@ -111,7 +111,6 @@ export IMPALA_LLVM_VERSION=5.0.1-p1
 unset IMPALA_LLVM_URL
 export IMPALA_LLVM_ASAN_VERSION=5.0.1-p1
 unset IMPALA_LLVM_ASAN_URL
-
 # Debug builds should use the release+asserts build to get additional coverage.
 # Don't use the LLVM debug build because the binaries are too large to distribute.
 export IMPALA_LLVM_DEBUG_VERSION=5.0.1-asserts-p1
@@ -515,6 +514,7 @@ export IMPALA_AUX_DATASET_DIR="$IMPALA_AUX_TEST_HOME/testdata/datasets"
 export IMPALA_COMMON_DIR="$IMPALA_HOME/common"
 export PATH="$IMPALA_TOOLCHAIN/gdb-$IMPALA_GDB_VERSION/bin:$PATH"
 export PATH="$IMPALA_HOME/bin:$IMPALA_TOOLCHAIN/cmake-$IMPALA_CMAKE_VERSION/bin/:$PATH"
+export BOOST_ROOT="$IMPALA_TOOLCHAIN/boost-$IMPALA_BOOST_VERSION/bin/"
 
 export HADOOP_CONF_DIR="$IMPALA_FE_DIR/src/test/resources"
 # The include and lib paths are needed to pick up hdfs.h and libhdfs.*
