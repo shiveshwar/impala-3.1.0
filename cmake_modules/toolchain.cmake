@@ -17,12 +17,6 @@
 
 # Set the root directory for the toolchain
 set(TOOLCHAIN_ROOT $ENV{IMPALA_TOOLCHAIN})
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpthread")
-set(CMAKE_LINKER_FLAGS "-lpthread" CACHE STRING "Linker Flags" FORCE)
-set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_LINKER_FLAGS}" CACHE STRING "" FORCE)
-set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS}" CACHE STRING "" FORCE)
-set(CMAKE_EXE_LINKER_FLAGS    "${CMAKE_LINKER_FLAGS}" CACHE STRING "" FORCE)
-
 if($ENV{USE_SYSTEM_GCC} EQUAL "0")
   # If Impala is built with the GCC from the toolchain, change compiler and link paths
   set(GCC_ROOT $ENV{IMPALA_TOOLCHAIN}/gcc-$ENV{IMPALA_GCC_VERSION})
